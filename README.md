@@ -8,7 +8,9 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "abizvn-clients"
+gem "abizvn-clients", git: "https://github.com/abizvncom/abizvn-clients.git"
+gem "valid_email2", "~> 7.0"
+gem "phonelib", "~> 0.10"
 ```
 
 And then execute:
@@ -19,6 +21,11 @@ $ bundle
 Or install it yourself as:
 ```bash
 $ gem install abizvn-clients
+```
+
+Now generating migrations files, then migrate them
+```bash
+$ rails abizvn_clients:install:migrations 
 ```
 
 ## Contributing
