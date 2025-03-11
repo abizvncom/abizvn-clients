@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    abizvn-clients (0.1.0)
+    abizvn-clients (0.2.0)
       phonelib (~> 0.10)
       rails (~> 7.2)
       valid_email2 (~> 7.0)
