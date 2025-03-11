@@ -21,6 +21,11 @@ Or install it yourself as:
 $ gem install abizvn-clients
 ```
 
+Now generating migrations files, then migrate them
+```bash
+$ rails abizvn_clients:install:migrations 
+```
+
 ## Contributing
 Contribution directions go here.
 

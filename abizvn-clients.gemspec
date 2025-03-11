@@ -26,4 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "valid_email2", "~> 7.0"
   spec.add_dependency "phonelib", "~> 0.10"
   spec.add_development_dependency "rspec-rails", "~> 7.0"
+  spec.add_development_dependency "shoulda-matchers", "~> 6.2"
+  spec.add_development_dependency "factory_bot_rails"
+  spec.add_development_dependency "byebug"
 end

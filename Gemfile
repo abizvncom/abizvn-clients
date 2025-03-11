@@ -16,5 +16,8 @@ gem "rubocop-rails-omakase", require: false
 # gem "debug", ">= 1.0.0"
 
 group :development, :test do
-  gem 'rspec-rails', '~> 7.0' # Or latest version
+  gem 'rspec-rails', '~> 7.0'
+  gem 'shoulda-matchers', '~> 6.2'
+  gem 'factory_bot_rails'
+  gem 'byebug'
 end

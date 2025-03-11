@@ -85,6 +85,7 @@ GEM
     benchmark (0.4.0)
     bigdecimal (3.1.9)
     builder (3.3.0)
+    byebug (11.1.3)
     concurrent-ruby (1.3.5)
     connection_pool (2.5.0)
     crass (1.0.6)
@@ -92,6 +93,11 @@ GEM
     diff-lcs (1.6.0)
     drb (2.2.1)
     erubi (1.13.1)
+    factory_bot (6.5.1)
+      activesupport (>= 6.1.0)
+    factory_bot_rails (6.4.4)
+      factory_bot (~> 6.5)
+      railties (>= 5.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -246,6 +252,8 @@ GEM
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
+    shoulda-matchers (6.4.0)
+      activesupport (>= 5.2.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -291,9 +299,12 @@ PLATFORMS
 
 DEPENDENCIES
   abizvn-clients!
+  byebug
+  factory_bot_rails
   puma
   rspec-rails (~> 7.0)
   rubocop-rails-omakase
+  shoulda-matchers (~> 6.2)
   sprockets-rails
   sqlite3
 
