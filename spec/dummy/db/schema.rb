@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_03_08_064539) do
+ActiveRecord::Schema[7.2].define(version: 2025_03_11_104419) do
   create_table "clients_management_clients", force: :cascade do |t|
     t.string "name", limit: 128, null: false
     t.string "admin_user_email", null: false
@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_03_08_064539) do
   create_table "clients_management_domains", force: :cascade do |t|
     t.string "name", limit: 255, null: false
     t.boolean "is_active", default: false, null: false
-    t.integer "client_id", null: false
+    t.integer "client_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["client_id"], name: "index_clients_management_domains_on_client_id"

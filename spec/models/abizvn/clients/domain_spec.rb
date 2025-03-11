@@ -10,6 +10,6 @@ RSpec.describe Abizvn::Clients::Domain, type: :model do
   end
 
   describe 'associations' do
-    it { should belong_to(:client) }
+    it { should belong_to(:client).optional }
   end
 end
